@@ -60,12 +60,12 @@ const Avatar = () => {
         <Text textAlign="center" fontSize="smaller" variant="description">
           Art by{' '}
           <Link
-            href="https://twitter.com/kojiro_ai"
+            href="https://github.com/ienjoyjs"
             target="_blank"
-            aria-label="KojiroArt"
+            aria-label="Harris"
             rel="noreferrer"
           >
-            KojiroArt
+            Harris
           </Link>
         </Text>
       </MotionBox>

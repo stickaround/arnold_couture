@@ -13,14 +13,7 @@ import {
   useColorModeValue,
 } from '@chakra-ui/react'
 import {
-  SiDotNet,
-  SiJavascript,
-  SiTypescript,
-  SiGraphql,
-  SiReact,
-  SiNextDotJs,
-  SiNodeDotJs,
-  SiDocker,
+  SiGraphql
 } from 'react-icons/si'
 import { GiCoffeePot } from 'react-icons/gi'
 import { IoMdOpen } from 'react-icons/io'
@@ -55,7 +48,7 @@ const Detail = ({ onOpen }: ISkillSetModal) => {
         currently working as a <b>Director</b> that focuses on{' '}
         <b>art</b>, <b>culture</b>,{' '}
         <Tooltip
-          label="Ha!. Or more accurately TECH DEBT"
+          label="Ha!. Or more accurately Cool"
           aria-label="Tech Debt?"
           hasArrow
         >
@@ -98,35 +91,6 @@ const Detail = ({ onOpen }: ISkillSetModal) => {
             Little Life
           </ListItem>
         </List>
-        <List spacing={3}>
-          <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={SiGraphql} color={emphasis} fontSize="2em" />
-            ********
-          </ListItem>
-          <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={SiReact} color={emphasis} fontSize="2em" />
-            ********
-          </ListItem>
-          <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={SiNextDotJs} color={emphasis} fontSize="2em" />
-            ********
-          </ListItem>
-          <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={SiDocker} color={emphasis} fontSize="2em" />
-            ********
-          </ListItem>
-        </List>
-        <Box>
-          <Text
-            as="button"
-            variant="emphasis"
-            fontSize="smaller"
-            textAlign="left"
-            onClick={onOpen}
-          >
-            See my full arsenal <Icon as={IoMdOpen} />
-          </Text>
-        </Box>
       </SimpleGrid>
     </Stack>
   )

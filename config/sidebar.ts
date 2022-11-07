@@ -18,37 +18,37 @@ type SocialMedia = {
 export const SocialMedias: SocialMedia[] = [
   {
     label: 'Twitter',
-    href: 'https://twitter.com/keysl1831',
+    href: 'https://twitter.com/@amarabidali',
     icon: FaTwitter,
   },
   {
     label: 'Instagram',
-    href: 'https://www.instagram.com/',
+    href: 'https://www.instagram.com/@amarabidali',
     icon: FaInstagram,
   },
   {
     label: 'LinkedIn',
-    href: 'https://www.linkedin.com/in/marclawingco/',
+    href: 'https://www.linkedin.com/@amarabidali',
     icon: FaLinkedin,
   },
   {
     label: 'StackOverflow',
-    href: 'https://stackoverflow.com/users/3867490/keysl',
+    href: 'https://stackoverflow.com/@amarabidali',
     icon: FaStackOverflow,
   },
   {
     label: 'Youtube',
-    href: 'https://www.youtube.com/channel/UCV-MiUVsKJrKJKKfUK58nhg',
+    href: 'https://www.youtube.com/@amarabidali',
     icon: FaYoutube,
   },
   {
     label: 'Github',
-    href: 'https://github.com/ienjoyjs',
+    href: 'https://github.com/@amarabidali',
     icon: FaGithub,
   },
   {
     label: 'Dev.to',
-    href: 'https://dev.to/ienjoyjs',
+    href: 'https://dev.to/@amarabidali',
     icon: FaDev,
   },
 ]

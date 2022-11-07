@@ -43,12 +43,15 @@ const FeaturedWorksSection = () => {
         <MotionGridItem colSpan={6} variants={fadeInUpSlower}>
           <FeaturedCard
             idx={1}
-            title="Tobira!"
-            src="/works/tobira/IphoneX-tobira.webp"
-            description="UK social media platform for travelers to show off their
-          adventure to the world. I was incharge of Front end integration, made using React, Antd and Styled Components."
+            title="ilerno"
+            src="/works/ilerno.png"
+            description="
+              We believe that whether you are 9 or 99, an amateur or professional, 
+              playing for fun or to develop your musical career, 
+              when you decide to learn playing an instrument you deserve a professional 
+              musician to take care of you."
             height={{ base: '130px', md: '225px', '2xl': '300px' }}
-            ctaUrl="https://tobira-app-test.netlify.app/"
+            ctaUrl="https://scoolio-clients-dev.track-progress.com/"
             objectPosition="right 20%"
             isMobile={isMobile}
           />
@@ -57,11 +60,11 @@ const FeaturedWorksSection = () => {
         <MotionGridItem colSpan={6} variants={fadeInUpSlower}>
           <FeaturedCard
             idx={2}
-            title="RSV"
-            description="RSV is a smart contract (ERC20) powered reservation system. I am incharge of backend using NET.Core 2.1."
-            src="/works/rsv.webp"
+            title="ilerno Support"
+            description="We help our clients get to know the ilerno site and make them easy to use it."
+            src="/works/ilerno_support.png"
             height={{ base: '130px', md: '225px', '2xl': '300px' }}
-            ctaUrl="https://solution.rsv.ltd/jp"
+            ctaUrl="https://support.ilerno.com/"
             isMobile={isMobile}
           />
         </MotionGridItem>
@@ -69,11 +72,13 @@ const FeaturedWorksSection = () => {
         <MotionGridItem colSpan={6} variants={fadeInUpSlower}>
           <FeaturedCard
             idx={3}
-            title="Agora School"
-            description="A quizz - reviewer LMS, I made as a freelancer. Backend were powered by PHPSlim and VueJS for Front end."
-            src="/works/agora.webp"
+            title="Solvrr"
+            description="
+              Solvrr Creative Studio is a digital marketing agency. 
+              We help our clients get found, get customers, and make more money on the web."
+            src="/works/solvrr.png"
             height={{ base: '130px', md: '225px', '2xl': '300px' }}
-            ctaUrl="https://dev.agora-school.com"
+            ctaUrl="https://solvrr.com/"
             objectPosition="right 20%"
             isMobile={isMobile}
           />
@@ -82,11 +87,31 @@ const FeaturedWorksSection = () => {
         <MotionGridItem colSpan={6} variants={fadeInUpSlower}>
           <FeaturedCard
             idx={4}
-            title="TMH Layla EC"
-            description="A Japanese Semi-conductor e-commerce made at my old place at IVP. I was working with backend using ASP.NET MVC"
-            src="/works/tmh.webp"
+            title="The MASTERS MUSIC SCHOOL"
+            description="
+              We are a London-based premier specialist music school, 
+              offering a comprehensive music education for all ages and levels of proficiency.
+              Being world- class performers ourselves we want to share the stage experience 
+              with our students and bring it into the teaching environment."
+            src="/works/tuition.png"
             height={{ base: '130px', md: '225px', '2xl': '300px' }}
-            ctaUrl="https://www.layla-ec.com/"
+            ctaUrl="https://tmms.co.uk/"
+            isMobile={isMobile}
+          />
+        </MotionGridItem>
+        
+        <MotionGridItem colSpan={6} variants={fadeInUpSlower}>
+          <FeaturedCard
+            idx={5}
+            title="Little Life"
+            description="
+              OUR MISSION Little Life Nursery aims to provide a warm, 
+              nurturing and natural way to develop communication and social skills in our children.
+              To encourage children to be imaginative and develop their creativity within a natural outdoor environment."
+            src="/works/little_life.png"
+            height={{ base: '130px', md: '225px', '2xl': '300px' }}
+            ctaUrl="https://littlelife.io/"
+            objectPosition="right 20%"
             isMobile={isMobile}
           />
         </MotionGridItem>

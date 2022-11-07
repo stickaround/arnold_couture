@@ -52,12 +52,12 @@ const GetInTouch = () => {
         </Text>
       </Heading>
       <Text variant="description">
-        Though, I am fairly introverted myself. I do reply to messages as long
-        as my human interaction battery lasts. Coding, work, movies or even weeb
-        stuff, anything is cool. So feel free to message me on any of my social
+        Though, I am confident in myself. I do reply to messages as long
+        as my human interaction battery lasts. Leading, work, movies or even meetings,
+        anything is cool. So feel free to message me on any of my social
         media or shoot me an{' '}
         <Link
-          href="mailto:marcjhon18@gmail.com"
+          href="amarabidali@gmail.com"
           target="_blank"
           rel="noreferrer"
         >

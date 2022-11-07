@@ -32,7 +32,7 @@ const DevToArticles = ({ articles }: { articles: Article[] }) => {
         Dev.to blog
       </Heading>
       <Text variant="description">
-        I write dev related things from time to time!
+        I write working related me from time to time!
       </Text>
       <SimpleGrid columns={{ base: 1, md: 2 }} spacing={{ base: 5, md: 10 }}>
         {articles.map((item) => (

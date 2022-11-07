@@ -113,18 +113,6 @@ const Portfolio = ({ articles }: { articles: Article[] }): JSX.Element => {
             </FadeInLayout>
             <FadeInLayout>
               <Box
-                id="blog"
-                className="contentRow"
-                paddingTop={{ base: 0, lg: 20, xl: 20 }}
-                paddingBottom={{ base: 12, lg: 10 }}
-                paddingX={0}
-                flexDirection={'row'}
-              >
-                <DevToArticles articles={articles} />
-              </Box>
-            </FadeInLayout>
-            <FadeInLayout>
-              <Box
                 id="contact"
                 className="contentRow"
                 paddingTop={{ base: 0, lg: 20, xl: 20 }}
@@ -143,7 +131,7 @@ const Portfolio = ({ articles }: { articles: Article[] }): JSX.Element => {
 }
 
 export async function getStaticProps() {
-  const res = await fetch('https://dev.to/api/articles?username=klawingco')
+  const res = await fetch('https://dev.to/api/articles?username=')
   const articles = await res.json()
   return {
     props: {

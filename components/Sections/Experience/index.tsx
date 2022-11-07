@@ -19,8 +19,8 @@ const DetailSection = () => (
       Since 2011, had a privilege to work with several schools that enables me
       to hone my skills and talents. These schools will always have a special
       place in my heart. Currently I am working with{' '}
-      <Link href="https://www2.deloitte.com/" target="_blank" rel="noreferrer">
-        Harris
+      <Link href="https://scoolio-clients-dev.track-progress.com/" target="_blank" rel="noreferrer">
+        ilerno
       </Link>
       .
     </Text>
