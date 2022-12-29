@@ -9,7 +9,6 @@ import Logo from '../Logo'
 import styles from './styles.module.css'
 import Navigation from './Navigation'
 import { mobileBreakpointsMap } from 'config/theme'
-import useScrollDirection, { ScrollDirection } from 'hooks/useScrollDirection'
 
 const mobileMenuVariants: Variants = {
   hidden: {
@@ -34,14 +33,13 @@ const Menu = () => {
   const bg = useColorModeValue('gray.100', 'black')
   const controls = useAnimation()
   const isMobile = useBreakpointValue(mobileBreakpointsMap)
-  const scrollDirection = useScrollDirection(true, isMobile)
   useEffect(() => {
-    if (scrollDirection === ScrollDirection.Down && isMobile) {
+    if (isMobile) {
       controls.start('hidden')
     } else {
       controls.start('show')
     }
-  }, [isMobile, controls, scrollDirection])
+  }, [isMobile, controls])
   return (
     <motion.div
       initial={isMobile ? 'hidden' : false}
