@@ -72,12 +72,13 @@ const ExperienceTab = () => {
               background: 'whiteAlpha.100',
             }}
             borderBottomWidth={tabOrientation === 'horizontal' ? '4px' : '0'}
+            paddingTop="0"
           >
             <Image
               src={
                 colorMode === 'dark' ? company.logo.dark : company.logo.light
               }
-              alt={company.longName}
+              alt="CalTech"
               maxWidth="88px"
               fallback={<Skeleton height="100%" width="100%" />}
             ></Image>
@@ -86,37 +87,21 @@ const ExperienceTab = () => {
       </TabList>
       <TabPanels>
         {ExperiencesList.map((company) => (
-          <TabPanel key={`TabPanel-${company.name}`}>
-            <SlideFade offsetY="20px" in={true}>
+          <TabPanel key={`TabPanel-${company.name}`} pt="0">
+            <SlideFade in={true}>
               <Stack spacing={0}>
-                <Text
-                  as="span"
-                  fontSize="lg"
-                  fontWeight="bold"
-                  variant="description"
-                >
-                  {company.position}
-                </Text>
                 <Text as="span">
                   <Link
-                    href={company.url}
+                    href="https://www.caltech.edu"
                     aria-label="scentregroup"
                     rel="noreferrer"
                     target="_blank"
                     fontSize="lg"
                     fontWeight="bold"
+                    isExternal
                   >
-                    #{company.name}
+                    {company.name}
                   </Link>
-                  <Text
-                    as="span"
-                    textTransform="none"
-                    fontSize="x-small"
-                    variant="description"
-                  >
-                    {' '}
-                    {company.subDetail}
-                  </Text>
                 </Text>
                 <Text fontSize="smaller">{company.duration}</Text>
               </Stack>

@@ -1,5 +1,5 @@
 import { memo } from 'react'
-import { Heading, Text, Stack, Link } from '@chakra-ui/react'
+import { Heading, Text, Stack } from '@chakra-ui/react'
 import ExperienceTab from './ExperienceTab'
 const DetailSection = () => (
   <Stack
@@ -13,17 +13,9 @@ const DetailSection = () => (
         fontVariantCaps: 'small-caps',
       }}
     >
-      Places i’ve worked.
+      Education.
     </Heading>
-    <Text variant="description">
-      Since 2011, had a privilege to work with several schools that enables me
-      to hone my skills and talents. These schools will always have a special
-      place in my heart. Currently I am working with{' '}
-      <Link href="https://scoolio-clients-dev.track-progress.com/" target="_blank" rel="noreferrer">
-        ilerno
-      </Link>
-      .
-    </Text>
+    <Text variant="description">{"Bachelor's Degree in Computer Science"}</Text>
 
     <ExperienceTab />
   </Stack>

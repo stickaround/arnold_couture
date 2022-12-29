@@ -61,7 +61,7 @@ const Sidebar = () => {
             variant="accent"
             fontWeight="light"
           >
-            Ohh you found me?. Howdy! I am
+            Ohh you found me?. Howdy! I am a
           </MotionText>
           <MotionHeading
             as="h1"
@@ -70,7 +70,7 @@ const Sidebar = () => {
             textTransform="uppercase"
             variants={fadeInUp}
           >
-            Director
+            Full-Stack Web/Web3 Engineer
           </MotionHeading>
           <MotionHeading
             as="h2"
@@ -82,7 +82,7 @@ const Sidebar = () => {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
-            Amar Abid Ali
+            Arnold Couture
           </MotionHeading>
           <MotionText
             colorScheme="gray"
@@ -90,7 +90,7 @@ const Sidebar = () => {
             className={styles.marginTopForce}
             variants={fadeInUp}
           >
-            Or you could call me Amar. That works too . . .
+            Or you could call me Arn. That works too . . .
           </MotionText>
 
           <MotionHeading
@@ -100,7 +100,7 @@ const Sidebar = () => {
             className={styles.marginTopSmall}
             variants={fadeInUp}
           >
-            Director
+            Software Engineer
           </MotionHeading>
 
           <MotionText
@@ -115,8 +115,8 @@ const Sidebar = () => {
               {' '}
               Thank you!
             </Text>
-            <br />I am a Director that specializes at art,
-            recently found myself building the ilerno site too.
+            <br />I am a Director that specializes at art, recently found myself
+            building the ilerno site too.
           </MotionText>
           <MotionButton
             size="lg"
@@ -128,7 +128,7 @@ const Sidebar = () => {
             width="120px"
             variants={simpleOpacity}
             as={'a'}
-            href="mailto:amarabidali@gmail.com"
+            href="mailto:arnoldcouture72@gmail.com"
             target="_blank"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}

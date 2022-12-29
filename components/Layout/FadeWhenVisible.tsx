@@ -16,7 +16,7 @@ const FadeInWhenVisible = ({ children }: { children: React.ReactNode }) => {
 
   return (
     <motion.div
-      style={{ margin: 0 }}
+      style={{ margin: 0, marginLeft: '30px' }}
       ref={ref}
       animate={controls}
       initial="initial"

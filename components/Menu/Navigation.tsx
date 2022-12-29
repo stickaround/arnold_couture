@@ -75,18 +75,12 @@ const Navigation = () => {
         maxWidth={{ base: '100%', sm: '100%', lg: '50%', xl: '60%' }}
         className={styles.menu}
         right={{
-          lg:
-            !isMobile && scrollDirection === ScrollDirection.Down
-              ? '2%'
-              : '3.5%',
+          lg: !isMobile ? '2%' : '3.5%',
         }}
         initial="hide"
         animate={(!isMobile || isOpen) && 'show'}
         style={{
-          width:
-            !isMobile && scrollDirection === ScrollDirection.Down
-              ? '12%'
-              : '100%',
+          width: !isMobile ? '12%' : '100%',
           top: !isOpen && isMobile && '-100vh',
           opacity: !isOpen && isMobile && '0',
           left: isOpen && isMobile && 0,
@@ -104,12 +98,12 @@ const Navigation = () => {
           justifyContent={{ base: 'center', lg: 'flex-end' }}
           direction={{
             base: 'column',
-            lg: scrollDirection === ScrollDirection.Down ? 'column' : 'row',
+            lg: 'row',
           }}
           paddingX={{ base: '', sm: '10', lg: '0' }}
           paddingY={{
             base: '10',
-            lg: scrollDirection === ScrollDirection.Down ? '10' : '3',
+            lg: '3',
           }}
           height={{ base: '100vh', lg: 'auto' }}
           paddingRight="0"
@@ -154,7 +148,7 @@ const Navigation = () => {
               rel="noreferrer"
               onClick={onMenuItemClick}
             >
-              Experience
+              Education
             </Button>
           </Box>
           <Box

@@ -7,13 +7,38 @@ import {
   ListIcon,
   Icon,
   SimpleGrid,
-  Box,
-  Tooltip,
   Stack,
   useColorModeValue,
 } from '@chakra-ui/react'
 import {
-  SiGraphql
+  SiReact,
+  SiVueDotJs,
+  SiSvelte,
+  SiNextDotJs,
+  SiGatsby,
+  SiJavascript,
+  SiTypescript,
+  SiGraphql,
+  SiSass,
+  SiBootstrap,
+  SiMaterialUi,
+  SiTailwindcss,
+  SiD3DotJs,
+  SiAngular,
+  SiNodeDotJs,
+  SiLaravel,
+  SiRuby,
+  SiDjango,
+  SiMysql,
+  SiPostgresql,
+  SiMongodb,
+  SiDocker,
+  SiKubernetes,
+  SiAmazonaws,
+  SiFirebase,
+  SiEthereum,
+  SiTrulia,
+  SiRust,
 } from 'react-icons/si'
 import { GiCoffeePot } from 'react-icons/gi'
 import { IoMdOpen } from 'react-icons/io'
@@ -25,7 +50,7 @@ type ISkillSetModal = {
 const Detail = ({ onOpen }: ISkillSetModal) => {
   const emphasis = useColorModeValue('teal.500', 'cyan.200')
   const currentYear = new Date().getFullYear()
-  const professionalYears = currentYear - 2016
+  const professionalYears = currentYear - 2014
 
   return (
     <Stack
@@ -44,51 +69,55 @@ const Detail = ({ onOpen }: ISkillSetModal) => {
         What i do.
       </Heading>
       <Text variant="description">
-        I`ve been teaching students {professionalYears} years now and
-        currently working as a <b>Director</b> that focuses on{' '}
-        <b>art</b>, <b>culture</b>,{' '}
-        <Tooltip
-          label="Ha!. Or more accurately Cool"
-          aria-label="Tech Debt?"
-          hasArrow
-        >
-          <Text as="span" variant="emphasis">
-            <b>awesome business logics</b>
-          </Text>
-        </Tooltip>{' '}
-        and even <b>ilerno site</b> stuff now, how time flies!
+        I have been working as a software engineer for {professionalYears} years
+        since graduating with Bachelor's Degree in Computer Science and I have
+        built number of websites.
         <br /> <br />
-        Here are few sites that are cup of my{' '}
-        <Tooltip
-          label="I only drink tea if I needed too!"
-          aria-label="I hate Tea!"
-          hasArrow
-        >
-          <Text as="span" variant="emphasis" textDecorationLine="line-through">
-            tea
-          </Text>
-        </Tooltip>{' '}
-        coffee <Icon as={GiCoffeePot} color={emphasis} />.
+        Below are my Skills <Icon as={GiCoffeePot} color={emphasis} />.
       </Text>
 
-      <SimpleGrid columns={2} spacing={4}>
-        <List spacing={3}>
+      <SimpleGrid columns={5} spacing={4}>
+        <List spacing={3} width="600px">
           <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={SiGraphql} color={emphasis} fontSize="2em" />
-            scoolio
+            Front-End:
+            <div style={{ marginLeft: 'auto' }}>
+              <ListIcon as={SiReact} color={emphasis} fontSize="2em" />
+              <ListIcon as={SiVueDotJs} color={emphasis} fontSize="2em" />
+              <ListIcon as={SiAngular} color={emphasis} fontSize="2em" />
+              <ListIcon as={SiSvelte} color={emphasis} fontSize="2em" />
+              <ListIcon as={SiNextDotJs} color={emphasis} fontSize="2em" />
+              <ListIcon as={SiGatsby} color={emphasis} fontSize="2em" />
+              <ListIcon as={SiJavascript} color={emphasis} fontSize="2em" />
+              <ListIcon as={SiTypescript} color={emphasis} fontSize="2em" />
+              <ListIcon as={SiGraphql} color={emphasis} fontSize="2em" />
+              <ListIcon as={SiBootstrap} color={emphasis} fontSize="2em" />
+              <ListIcon as={SiSass} color={emphasis} fontSize="2em" />
+              <ListIcon as={SiMaterialUi} color={emphasis} fontSize="2em" />
+              <ListIcon as={SiTailwindcss} color={emphasis} fontSize="2em" />
+              <ListIcon as={SiD3DotJs} color={emphasis} fontSize="2em" />
+            </div>
           </ListItem>
           <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={SiGraphql} color={emphasis} fontSize="2em" />
-            ilerno
+            Back-End:
+            <div style={{ marginLeft: 'auto' }}>
+              <ListIcon as={SiNodeDotJs} color={emphasis} fontSize="2em" />
+              <ListIcon as={SiLaravel} color={emphasis} fontSize="2em" />
+              <ListIcon as={SiRuby} color={emphasis} fontSize="2em" />
+              <ListIcon as={SiDjango} color={emphasis} fontSize="2em" />
+              <ListIcon as={SiMysql} color={emphasis} fontSize="2em" />
+              <ListIcon as={SiPostgresql} color={emphasis} fontSize="2em" />
+              <ListIcon as={SiDocker} color={emphasis} fontSize="2em" />
+              <ListIcon as={SiKubernetes} color={emphasis} fontSize="2em" />
+              <ListIcon as={SiAmazonaws} color={emphasis} fontSize="2em" />
+              <ListIcon as={SiFirebase} color={emphasis} fontSize="2em" />
+            </div>
           </ListItem>
           <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={SiGraphql} color={emphasis} fontSize="2em" />
-            TMMS
-          </ListItem>
-
-          <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={SiGraphql} color={emphasis} fontSize="2em" />
-            Little Life
+            Blockchain & Web3 Development
+            <div style={{ marginLeft: 'auto' }}>
+              <ListIcon as={SiEthereum} color={emphasis} fontSize="2em" />
+              <ListIcon as={SiRust} color={emphasis} fontSize="2em" />
+            </div>
           </ListItem>
         </List>
       </SimpleGrid>
