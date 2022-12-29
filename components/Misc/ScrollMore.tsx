@@ -7,31 +7,7 @@ import {
 } from '@chakra-ui/react'
 import { RiMouseLine } from 'react-icons/ri'
 import { motion, Variants, AnimatePresence } from 'framer-motion'
-import useScrollDirection, { ScrollDirection } from 'hooks/useScrollDirection'
 import { mobileBreakpointsMap } from 'config/theme'
-
-const scrollMoreVariants: Variants = {
-  initial: {
-    opacity: 0,
-    y: 50,
-  },
-  hidden: {
-    opacity: [0, 1],
-    transition: {
-      duration: 0.5,
-      delay: 1,
-      ease: 'easeIn',
-    },
-  },
-  bounce: {
-    y: [0, -18, 0],
-    transition: {
-      duration: 1.6,
-      ease: 'easeInOut',
-      loop: Infinity,
-    },
-  },
-}
 
 const emailVariants: Variants = {
   hidden: {
@@ -54,7 +30,6 @@ const emailVariants: Variants = {
 
 const ScrollMore = () => {
   const isMobile = useBreakpointValue(mobileBreakpointsMap)
-  const scrollDirection = useScrollDirection(false, isMobile)
   const emailColor = useColorModeValue('gray.800', 'gray.400')
   const emailLine = useColorModeValue('teal.500', 'cyan.200')
 
@@ -66,26 +41,7 @@ const ScrollMore = () => {
       display={isMobile ? 'none' : 'block'}
     >
       <AnimatePresence>
-        {[ScrollDirection.Initial, ScrollDirection.Up].includes(
-          scrollDirection
-        ) && (
-          <motion.div
-            initial="initial"
-            animate={['hidden', 'bounce']}
-            variants={scrollMoreVariants}
-          >
-            <Icon
-              w={6}
-              h={6}
-              as={RiMouseLine}
-              color="currentColor"
-              opacity="0.75"
-            />
-          </motion.div>
-        )}
-      </AnimatePresence>
-      <AnimatePresence>
-        {scrollDirection === ScrollDirection.Down && (
+        {
           <motion.div
             initial="hidden"
             animate="show"
@@ -103,7 +59,7 @@ const ScrollMore = () => {
               as="a"
               paddingY={3}
               fontFamily="monospace"
-              href="mailto:amarabidali@gmail.com"
+              href="mailto:arnoldcouture72@gmail.com"
               target="_blank"
               rel="noreferrer"
               color={emailColor}
@@ -130,10 +86,10 @@ const ScrollMore = () => {
                 marginTop: '10px',
               }}
             >
-              amarabidali@gmail.com{' '}
+              arnoldcouture72@gmail.com{' '}
             </Text>
           </motion.div>
-        )}
+        }
       </AnimatePresence>
     </Box>
   )

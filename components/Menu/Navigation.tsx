@@ -15,7 +15,6 @@ import styles from './styles.module.css'
 import MobileMenu from './toggle'
 import { ThemeMode, mobileBreakpointsMap } from 'config/theme'
 import { easing, menuAnim } from 'config/animations'
-import useScrollDirection, { ScrollDirection } from 'hooks/useScrollDirection'
 
 const Navigation = () => {
   const { toggleColorMode, colorMode } = useColorMode()
@@ -46,7 +45,6 @@ const Navigation = () => {
     },
     [isMobile, toggleOpen]
   )
-  const scrollDirection = useScrollDirection()
 
   return (
     <>
