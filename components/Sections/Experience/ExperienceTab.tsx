@@ -78,7 +78,7 @@ const ExperienceTab = () => {
               src={
                 colorMode === 'dark' ? company.logo.dark : company.logo.light
               }
-              alt="CalTech"
+              alt="UH"
               maxWidth="88px"
               fallback={<Skeleton height="100%" width="100%" />}
             ></Image>
@@ -92,7 +92,7 @@ const ExperienceTab = () => {
               <Stack spacing={0}>
                 <Text as="span">
                   <Link
-                    href="https://www.caltech.edu"
+                    href="https://uh.edu"
                     aria-label="scentregroup"
                     rel="noreferrer"
                     target="_blank"

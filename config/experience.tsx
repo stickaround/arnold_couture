@@ -1,4 +1,4 @@
-export type Company = 'CalTech'
+export type Company = 'UH'
 
 export type CompanyDetail = {
   name: string
@@ -13,12 +13,12 @@ export type CompanyDetail = {
 export const Experiences: {
   [key in Company]: CompanyDetail
 } = {
-  CalTech: {
-    name: 'California Institute of Technology',
+  UH: {
+    name: 'University of Houston',
     duration: '2006 - 2011',
     logo: {
-      light: '/worked_at_logos/caltech.png',
-      dark: '/worked_at_logos/caltech.png',
+      light: '/worked_at_logos/uh.png',
+      dark: '/worked_at_logos/uh.png',
     },
     roles: [
       <>
@@ -34,4 +34,4 @@ export const Experiences: {
   },
 }
 
-export const ExperiencesList = [Experiences.CalTech]
+export const ExperiencesList = [Experiences.UH]
